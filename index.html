@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock API Portal</title>
+  <script type="module" src="/main.js"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    code { background: #eef2f7; padding: 3px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #d63384; }
+    .endpoint-card {
+      background: white;
+      border: 1px solid #e1e8ed;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .badge {
+      background: #0070f3;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.85em;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>📡 Mock REST API Sandbox</h1>
+  <p>Welcome to your serverless mock data system. This dashboard documents the endpoints available for your front-end testing apps.</p>
+
+  <div class="endpoint-card">
+    <h2><span class="badge">GET</span> <code>/data</code></h2>
+    <p>Fetches dynamically generated high-performance structural datasets.</p>
+    
+    <h4>Available Parameters:</h4>
+    <ul>
+      <li><strong><code>type</code></strong> (Required): The entity model type. Currently supports <code>user</code>.</li>
+      <li><strong><code>id</code></strong> (Optional): Use <code>all</code> to get everything, or provide a specific numeric ID (e.g., <code>1</code> to <code>10000</code>).</li>
+    </ul>
+
+    <h4>Try Live Queries:</h4>
+    <ul>
+      <li>👉 <a href="/data?type=user&id=all" target="_blank">Fetch All 10,000 Users</a></li>
+      <li>👉 <a href="/data?type=user&id=1" target="_blank">Fetch User #1</a></li>
+      <li>👉 <a href="/data?type=user&id=9999" target="_blank">Fetch User #9999</a></li>
+    </ul>
+  </div>
+</body>
+</html>
