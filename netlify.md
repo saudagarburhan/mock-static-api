@@ -40,3 +40,7 @@ netlify dev
 3. It automatically intercepts `/data`, runs your `netlify/functions/data.js` script locally, and returns the pure JSON data.
 
 You can now use http://localhost:8888/data?type=user&id=1 locally, and it will behave exactly like your live website.
+
+## Legacy Issue
+
+- https://developers.netlify.com/guides/migrating-to-the-modern-netlify-functions/
