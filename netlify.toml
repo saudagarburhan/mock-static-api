@@ -3,3 +3,14 @@
   to = "/.netlify/functions/data"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/notification"
+  to = "/.netlify/functions/notification"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/__form.html"  # Matches the public URL structure, not the local folder layout
+  status = 404
+  force = true
