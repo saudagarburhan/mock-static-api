@@ -36,7 +36,7 @@ export const handler = async (event, context) => {
       };
     }
 
-    const siteUrl = process.env.URL || 'https://netlify.app';
+    const siteUrl = process.env.URL || 'https://dashing-crumble-45a9de.netlify.app';
 
     const formPayload = new URLSearchParams({
       'form-name': 'api-notification', 
