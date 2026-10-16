@@ -12,5 +12,6 @@
 
 [[redirects]]
   from = "/__form.html"  # Matches the public URL structure, not the local folder layout
+  to = "/"
   status = 404
   force = true
