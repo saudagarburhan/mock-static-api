@@ -36,9 +36,7 @@ export const handler = async (event, context) => {
       };
     }
 
-    const protocol = event.headers['x-nf-request-protocol'] || 'https';
-    const host = event.headers.host;
-    const siteUrl = `${protocol}://${host}`;
+    const siteUrl = process.env.URL || 'https://netlify.app';
 
     const formPayload = new URLSearchParams({
       'form-name': 'api-notification', 
